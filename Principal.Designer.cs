@@ -82,7 +82,7 @@
             gbxTeste1.Controls.Add(txtResTeste1);
             gbxTeste1.Controls.Add(label2);
             gbxTeste1.Controls.Add(btnCalcularTeste1);
-            gbxTeste1.Location = new Point(12, 47);
+            gbxTeste1.Location = new Point(12, 262);
             gbxTeste1.Name = "gbxTeste1";
             gbxTeste1.Size = new Size(241, 106);
             gbxTeste1.TabIndex = 4;
@@ -113,6 +113,7 @@
             btnCalcularTeste1.TabIndex = 5;
             btnCalcularTeste1.Text = "Calcular";
             btnCalcularTeste1.UseVisualStyleBackColor = true;
+            btnCalcularTeste1.Click += btnCalcularTeste1_Click;
             // 
             // gbxTeste2
             // 
@@ -122,16 +123,16 @@
             gbxTeste2.Controls.Add(txtResTeste2);
             gbxTeste2.Controls.Add(label1);
             gbxTeste2.Controls.Add(btnCalcularTeste2);
-            gbxTeste2.Location = new Point(222, 319);
+            gbxTeste2.Location = new Point(12, 383);
             gbxTeste2.Name = "gbxTeste2";
-            gbxTeste2.Size = new Size(204, 175);
+            gbxTeste2.Size = new Size(241, 175);
             gbxTeste2.TabIndex = 8;
             gbxTeste2.TabStop = false;
             gbxTeste2.Text = "Teste 2";
             // 
             // txtInputTeste2
             // 
-            txtInputTeste2.Location = new Point(119, 70);
+            txtInputTeste2.Location = new Point(141, 70);
             txtInputTeste2.Name = "txtInputTeste2";
             txtInputTeste2.Size = new Size(66, 23);
             txtInputTeste2.TabIndex = 10;
@@ -139,7 +140,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(17, 73);
+            label4.Location = new Point(39, 73);
             label4.Name = "label4";
             label4.Size = new Size(96, 15);
             label4.TabIndex = 9;
@@ -149,14 +150,14 @@
             // 
             label3.Location = new Point(17, 28);
             label3.Name = "label3";
-            label3.Size = new Size(168, 34);
+            label3.Size = new Size(218, 34);
             label3.TabIndex = 8;
             label3.Text = "Verificar se número pertence a sequência Fibonacci";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtResTeste2
             // 
-            txtResTeste2.Location = new Point(85, 131);
+            txtResTeste2.Location = new Point(107, 131);
             txtResTeste2.Name = "txtResTeste2";
             txtResTeste2.Size = new Size(100, 23);
             txtResTeste2.TabIndex = 7;
@@ -164,7 +165,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 134);
+            label1.Location = new Point(39, 134);
             label1.Name = "label1";
             label1.Size = new Size(62, 15);
             label1.TabIndex = 6;
@@ -172,7 +173,7 @@
             // 
             // btnCalcularTeste2
             // 
-            btnCalcularTeste2.Location = new Point(17, 99);
+            btnCalcularTeste2.Location = new Point(39, 99);
             btnCalcularTeste2.Name = "btnCalcularTeste2";
             btnCalcularTeste2.Size = new Size(168, 23);
             btnCalcularTeste2.TabIndex = 5;
@@ -190,7 +191,7 @@
             gbxTeste3.Controls.Add(txtMenorFaturamentoT3);
             gbxTeste3.Controls.Add(label7);
             gbxTeste3.Controls.Add(btnCalcularTeste3);
-            gbxTeste3.Location = new Point(432, 212);
+            gbxTeste3.Location = new Point(400, 47);
             gbxTeste3.Name = "gbxTeste3";
             gbxTeste3.Size = new Size(372, 195);
             gbxTeste3.TabIndex = 9;
@@ -278,9 +279,9 @@
             gbxTeste4.Controls.Add(txtPartSP);
             gbxTeste4.Controls.Add(label12);
             gbxTeste4.Controls.Add(btnCalcularTeste4);
-            gbxTeste4.Location = new Point(222, 500);
+            gbxTeste4.Location = new Point(259, 271);
             gbxTeste4.Name = "gbxTeste4";
-            gbxTeste4.Size = new Size(204, 258);
+            gbxTeste4.Size = new Size(241, 258);
             gbxTeste4.TabIndex = 10;
             gbxTeste4.TabStop = false;
             gbxTeste4.Text = "Teste 4";
@@ -289,7 +290,7 @@
             // 
             txtPartOutros.Location = new Point(69, 210);
             txtPartOutros.Name = "txtPartOutros";
-            txtPartOutros.Size = new Size(118, 23);
+            txtPartOutros.Size = new Size(150, 23);
             txtPartOutros.TabIndex = 16;
             // 
             // label14
@@ -305,7 +306,7 @@
             // 
             txtPartES.Location = new Point(69, 181);
             txtPartES.Name = "txtPartES";
-            txtPartES.Size = new Size(118, 23);
+            txtPartES.Size = new Size(150, 23);
             txtPartES.TabIndex = 14;
             // 
             // label13
@@ -321,7 +322,7 @@
             // 
             txtPartMG.Location = new Point(69, 152);
             txtPartMG.Name = "txtPartMG";
-            txtPartMG.Size = new Size(118, 23);
+            txtPartMG.Size = new Size(150, 23);
             txtPartMG.TabIndex = 12;
             // 
             // label9
@@ -337,7 +338,7 @@
             // 
             txtPartRJ.Location = new Point(69, 123);
             txtPartRJ.Name = "txtPartRJ";
-            txtPartRJ.Size = new Size(118, 23);
+            txtPartRJ.Size = new Size(150, 23);
             txtPartRJ.TabIndex = 10;
             // 
             // label10
@@ -351,9 +352,9 @@
             // 
             // label11
             // 
-            label11.Location = new Point(24, 28);
+            label11.Location = new Point(17, 28);
             label11.Name = "label11";
-            label11.Size = new Size(163, 34);
+            label11.Size = new Size(202, 34);
             label11.TabIndex = 8;
             label11.Text = "Participação de cada estado";
             label11.TextAlign = ContentAlignment.MiddleCenter;
@@ -362,7 +363,7 @@
             // 
             txtPartSP.Location = new Point(69, 94);
             txtPartSP.Name = "txtPartSP";
-            txtPartSP.Size = new Size(118, 23);
+            txtPartSP.Size = new Size(150, 23);
             txtPartSP.TabIndex = 7;
             // 
             // label12
@@ -378,7 +379,7 @@
             // 
             btnCalcularTeste4.Location = new Point(17, 65);
             btnCalcularTeste4.Name = "btnCalcularTeste4";
-            btnCalcularTeste4.Size = new Size(170, 23);
+            btnCalcularTeste4.Size = new Size(202, 23);
             btnCalcularTeste4.TabIndex = 5;
             btnCalcularTeste4.Text = "Calcular";
             btnCalcularTeste4.UseVisualStyleBackColor = true;
@@ -392,7 +393,7 @@
             gbxTeste5.Controls.Add(txtResultadoInvertido);
             gbxTeste5.Controls.Add(label20);
             gbxTeste5.Controls.Add(btnInverterTeste5);
-            gbxTeste5.Location = new Point(432, 412);
+            gbxTeste5.Location = new Point(12, 47);
             gbxTeste5.Name = "gbxTeste5";
             gbxTeste5.Size = new Size(372, 176);
             gbxTeste5.TabIndex = 17;
@@ -469,22 +470,22 @@
             cbxTeste.TabIndex = 19;
             cbxTeste.SelectedIndexChanged += cbxTeste_SelectedIndexChanged;
             // 
-            // Form1
+            // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(268, 164);
+            ClientSize = new Size(1572, 777);
             Controls.Add(cbxTeste);
             Controls.Add(label16);
             Controls.Add(gbxTeste5);
+            Controls.Add(gbxTeste2);
             Controls.Add(gbxTeste4);
             Controls.Add(gbxTeste3);
-            Controls.Add(gbxTeste2);
             Controls.Add(gbxTeste1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Name = "Form1";
+            Name = "Principal";
             SizeGripStyle = SizeGripStyle.Hide;
-            Text = "Teste Target Sistemas";
+            Text = "Teste Gupy Target";
             gbxTeste1.ResumeLayout(false);
             gbxTeste1.PerformLayout();
             gbxTeste2.ResumeLayout(false);

@@ -8,6 +8,8 @@ namespace Teste_Target_Sistemas
         public Principal()
         {
             InitializeComponent();
+
+            this.Size = new Size(284, 79);
         }
 
         private void btnCalcularTeste1_Click(object sender, EventArgs e)
@@ -162,9 +164,70 @@ namespace Teste_Target_Sistemas
 
         private void cbxTeste_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cbxTeste.SelectedText == "Teste 1")
+            if(cbxTeste.SelectedItem == "Teste 1")
             {
                 this.Size = new Size(284, 203);
+                gbxTeste1.Location = new Point(12, 47);
+
+                gbxTeste1.Visible = true;
+                gbxTeste2.Visible = false;
+                gbxTeste3.Visible = false;
+                gbxTeste4.Visible = false;
+                gbxTeste5.Visible = false;
+            }
+            else if (cbxTeste.SelectedItem == "Teste 2")
+            {
+                this.Size = new Size(284, 273);
+                gbxTeste2.Location = new Point(12, 47);
+
+                gbxTeste1.Visible = false;
+                gbxTeste2.Visible = true;
+                gbxTeste3.Visible = false;
+                gbxTeste4.Visible = false;
+                gbxTeste5.Visible = false;
+            }
+            else if (cbxTeste.SelectedItem == "Teste 3")
+            {
+                this.Size = new Size(412, 289);
+                gbxTeste3.Location = new Point(12, 47);
+
+                gbxTeste1.Visible = false;
+                gbxTeste2.Visible = false;
+                gbxTeste3.Visible = true;
+                gbxTeste4.Visible = false;
+                gbxTeste5.Visible = false;
+            }
+            else if (cbxTeste.SelectedItem == "Teste 4")
+            {
+                this.Size = new Size(280, 353);
+                gbxTeste4.Location = new Point(12, 47);
+
+                gbxTeste1.Visible = false;
+                gbxTeste2.Visible = false;
+                gbxTeste3.Visible = false;
+                gbxTeste4.Visible = true;
+                gbxTeste5.Visible = false;
+            }
+            else if (cbxTeste.SelectedItem == "Teste 5")
+            {
+                this.Size = new Size(412, 274);
+                gbxTeste5.Location = new Point(12, 47);
+
+                gbxTeste1.Visible = false;
+                gbxTeste2.Visible = false;
+                gbxTeste3.Visible = false;
+                gbxTeste4.Visible = false;
+                gbxTeste5.Visible = true;
+            }
+            else
+            {
+                this.Size = new Size(284, 79);
+
+                gbxTeste1.Visible = false;
+                gbxTeste2.Visible = false;
+                gbxTeste3.Visible = false;
+                gbxTeste4.Visible = false;
+                gbxTeste5.Visible = false;
             }
         }
     }
